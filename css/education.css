@@ -1,0 +1,631 @@
+@charset "utf-8";
+
+.IndexKikaku li {
+	display:table-cell;
+	}
+.IndexSea {
+	width:400px;
+	float:right;
+}
+.IndexSea dt {
+	background:url(../images/common/bg_dig.png) ,-webkit-gradient(linear, center top, center bottom, 
+	from(#961886), 
+	to(#85167C));
+	
+	background:url(../images/common/bg_dig.png) , -moz-linear-gradient(top center,
+	#961886 0, 
+	#85167C 100%);
+	
+	background: url(../images/common/bg_dig.png) ,linear-gradient(to bottom,
+	#961886 0, 
+	#85167C 100%);
+	
+	background: url(../images/common/bg_dig.png) ,-ms-linear-gradient(top,
+	#961886 0, 
+	#85167C 100%);	
+	
+	line-height:30px;
+	color:#FFF;
+	border-radius:3px;
+	margin:10px 0;
+	padding:0 0 0 10px;
+	}
+
+/*s-curriculum*/
+.Catch-s {
+	font-family:"ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+	font-size:300%;
+	}
+	#Tradition01 {
+		background:url(../images/education/s-curriculum/tradition_01.png) left top no-repeat;
+		}
+		#Tradition01 h3 {
+			color:#F0468A;
+			}
+	#Tradition02 {
+		background:url(../images/education/s-curriculum/tradition_02.png) left top no-repeat;	
+		}
+		#Tradition02 h3 {
+			color:#569E54;
+			}
+	#Tradition03 {
+		background:url(../images/education/s-curriculum/tradition_03.png) left top no-repeat;	
+		}
+		#Tradition03 h3 {
+			color:#5A768B;
+			}
+	#Tradition04 {
+		background:url(../images/education/s-curriculum/tradition_04.png) left top no-repeat;	
+		}
+		#Tradition04 h3 {
+			color:#7379B7;
+			}
+	#Tradition01,
+	#Tradition02,
+	#Tradition03,
+	#Tradition04 {
+		padding:0 260px 0 236px;
+		min-height:254px;
+		
+		text-shadow: #FFFFFF -1px -1px 2px, #FFFFFF 1px 1px 2px;
+		}
+	#Tradition01 h3,
+	#Tradition02 h3,
+	#Tradition03 h3,
+	#Tradition04 h3 {
+		padding-top:30px;
+		margin-bottom:15px;
+		font-family:"ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+		font-size:250%;
+		font-weight:bold;
+	}
+	
+  .teacherL,
+  .teacherR {
+	  background-image: url(../images/education/s-curriculum/bg_img_01.png);
+	  background-repeat: no-repeat;
+	  width: 360px;
+	  padding:30px 0 20px 15px;
+	  float: left;
+	  margin-top: 30px;
+  }
+  .teacherL {
+	  background-image: url(../images/education/s-curriculum/bg_img_02.png);
+	  float: left;
+  }
+  .teacherL h4,
+  .teacherR h4 {
+	  font-size: 120%;
+	  font-weight: bold;
+	  color: #4C7E49;
+	  margin-bottom: 10px;
+	  line-height: 1.4;
+  }
+  .teacherL h4 {
+	  color: #CA4673;
+  }
+
+  .teacherL h4 + p,
+  .teacherR h4 + p {
+	  width: 200px;
+	  float: left;
+  }
+  
+  .teacherL dl,
+  .teacherR dl {
+	  width: 140px;
+	  float: right;
+  }
+  .teacherL dl dd strong,
+  .teacherR dl dd strong {
+	  font-size: 112%;
+  }
+  .teacherL dd,
+  .teacherR dd {
+	  margin-top: 10px;
+	  line-height: 1.2;
+  }
+  
+ 
+
+/*w-curriculum.html*/
+.oneWex {
+	margin-top:50px;
+}
+.oneWex > img {
+	float:left;
+	}
+.oneWex > div {
+	width:590px;
+	float:right;
+	}
+	#Main .oneWex:nth-child(2n) > img {
+		float:right;
+		}
+	#Main .oneWex:nth-child(2n) > div {
+		float:right;
+		}
+.oneWex h4 {
+	font-size:130%;
+	border-bottom:2px solid #86167C;
+	padding:10px;
+	margin-bottom:15px;
+	}
+	.oneWex aside {
+		margin-bottom:10px;
+		}
+	.oneWex aside p:before {
+		content:"[姉妹校福岡HB]　";
+		font-size:85%;
+		color:#666;
+		}
+	.oneWex aside li {
+		border-radius:100px;
+		padding:5px 10px;
+		display:inline-block;
+		color:#FFF;
+		}
+	.oneWex aside li:nth-child(2){
+		color:#000;
+	}
+.selectEx {
+	margin-top:15px;
+}
+.selectEx dl {
+	width:290px;
+	background:#EEE;
+	padding:10px;
+	box-sizing:border-box;
+	}
+	.selectEx dl {
+		border-radius:4px;
+	}
+	.selectEx dl:first-child {
+		float:left;
+		background:#F0CEFB;
+		}
+	.selectEx dl:last-child {
+		float:right;
+		background:#FAC5EB;
+		}
+	.selectEx dt {
+		color:#64025C;
+		font-weight:bold;
+		text-align:center;
+		margin-bottom:10px;
+		background: url(../images/common/front_deco.png) left top no-repeat,url(../images/common/back_deco.png) right top no-repeat;
+		}
+	.selectEx dt strong {
+		color:#FFF;
+		border-radius:4px;
+		display:inline-block;
+		padding:5px 15px;
+		}
+.Points dt {
+	background:url(../images/common/bg_dig.png) ,-webkit-gradient(linear, center top, center bottom, 
+	from(#961886), 
+	to(#85167C));
+	
+	background:url(../images/common/bg_dig.png) , -moz-linear-gradient(top center,
+	#961886 0, 
+	#85167C 100%);
+	
+	background: url(../images/common/bg_dig.png) ,linear-gradient(to bottom,
+	#961886 0, 
+	#85167C 100%);
+	
+	background: url(../images/common/bg_dig.png) ,-ms-linear-gradient(top,
+	#961886 0, 
+	#85167C 100%);
+	
+	line-height:30px;
+	color:#FFF;
+	border-radius:5px 5px 0 0;
+	margin:10px 0 0 0;
+	padding:0 0 0 10px;
+	font-size:130%;
+}
+	.Points dd {
+		border:1px solid #CCCCCC;
+		padding:15px;
+		font-size:125%;
+	}
+	.Points dd li {
+		line-height:1;
+		display:inline-block;
+		width:49%;
+	}
+	.Points em {
+		 font-family: "Romanesco";
+		 font-size:250%;
+	}
+	.Points dt em {
+		 font-size:400%;
+	}
+.wmaj_timetable {
+	background-color: #FDEEF4;
+	border: 2px solid #EC7EAE;
+	padding: 10px;
+}
+.wmaj_timetable table {
+	margin-top: 10px;
+	border-collapse: collapse;
+	width:100%;
+}
+.wmaj_timetable table th {
+	border-right: 1px solid #FDEEF4;
+	border-bottom: 1px solid #FDEEF4;
+	background-color: #EC7EAE;
+	color: #FFF;
+	font-weight: normal;
+	padding: 5px 1px;
+	width: 14%;
+}
+.wmaj_timetable table td {
+	border-right: 1px solid #F8ABC8;
+	border-bottom: 1px solid #F8ABC8;
+	background-color: #FFF;
+	padding: 10px 1px;
+	width: 14%;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 1.1em;
+}
+.wmaj_timetable table td.sat {
+	border-right: 1px solid #FDEEF4;
+}
+.wmaj_timetable table td.hour5 {
+	border-bottom: 1px solid #FDEEF4;
+}
+.wmaj_timetable table td.required {
+	background-color: #FBD7E6;
+}
+.wmaj_timetable table td.wmaj01 {
+	background-color: #9CDEF8;
+}
+.wmaj_timetable table td.wmaj02 {
+	background-color: #EF8B8A;
+}
+.wmaj_timetable table td.wmaj03 {
+	background-color: #B4EFA3;
+}
+.wmaj_timetable .curriculumico {
+	margin-right: 2px;
+	vertical-align: middle;
+}
+
+#CulinaryWrap {
+	position:relative;
+	width:100%;
+	}
+	#CulinaryWrap #Culinary02 {
+		position: absolute;
+		top:176px;
+		right:4px;
+	}
+
+/*overseas-training*/
+#overseasOthers h4 {
+	background:url(../images/common/bg_dig.png) ,-webkit-gradient(linear, center top, center bottom, 
+	from(#961886), 
+	to(#85167C));
+	
+	background:url(../images/common/bg_dig.png) , -moz-linear-gradient(top center,
+	#961886 0, 
+	#85167C 100%);
+	
+	background: url(../images/common/bg_dig.png) ,linear-gradient(to bottom,
+	#961886 0, 
+	#85167C 100%);
+	
+	background: url(../images/common/bg_dig.png) ,-ms-linear-gradient(top,
+	#961886 0, 
+	#85167C 100%);
+	
+	line-height:30px;
+	color:#FFF;
+	border-radius:5px 5px 0 0;
+	margin:10px 0 0 0;
+	padding:0 0 0 10px;
+	}
+#overseasOthers dl {
+	display:table;
+	width:100%;
+	border-bottom:1px dotted #DDD;
+	margin:10px;
+	}
+#overseasOthers dt,
+#overseasOthers dd {
+	display: table-cell;
+}
+#overseasOthers dt {
+	width:30%;
+}
+#overseasOthers dt:before {
+	content: "■";
+	}
+/*qualifi_box*/
+
+.studyList li {
+	text-indent:-1em;
+	padding-left:1em;
+	margin-bottom:10px;
+}
+.studyList li:before {
+	content: "●";
+	color:#999;
+	}
+
+.qualifi_box dl {
+	width:350px;
+	float:left;
+	margin-left:20px;
+	}
+.qualifi_box dt {
+	background:#1E1E1E;
+	line-height:30px;
+	color:#FFF;
+	border-radius:5px 5px 0 0;
+	margin:10px 0 0 0;
+	padding:0 0 0 10px;
+}
+.qualifi_box dt img {
+	margin-top:4px;
+	}
+.qualifi_box dd {
+	padding:10px;
+}
+.bgBox {
+	background:#EEE;
+	padding:10px;
+	border-radius:5px;
+	}
+
+.boxL {
+  width: 370px;
+  float: left;
+}
+.boxR {
+  width: 370px;
+  float: right;
+}
+
+#English .col2 {
+	margin-left:-10px;
+}
+#English .col2 dl {
+	width:370px;
+	float:left;
+	margin:0 0 0 10px;
+}
+#English .col2 dt {
+	background:url(../images/common/bg_dig.png) ,-webkit-gradient(linear, center top, center bottom, 
+	from(#961886), 
+	to(#85167C));
+	
+	background:url(../images/common/bg_dig.png) , -moz-linear-gradient(top center,
+	#961886 0, 
+	#85167C 100%);
+	
+	background: url(../images/common/bg_dig.png) ,linear-gradient(to bottom,
+	#961886 0, 
+	#85167C 100%);
+	
+	background: url(../images/common/bg_dig.png) ,-ms-linear-gradient(top,
+	#961886 0, 
+	#85167C 100%);
+
+	line-height:30px;
+	color:#FFF;
+	border-radius:5px 5px 0 0;
+	margin:10px 0 0 0;
+	padding:10px 0 10px 10px;
+	line-height:1.1;
+	}
+#English .col2 dt em {
+		 font-family: "Romanesco";
+		 font-size:240%;
+	}
+#English .col2 dd {
+	background:#FEE7FD;
+	border:1px solid #FED3FC;
+	padding:10px;
+	}
+
+#tVoiceArea {
+	margin:20px 0 30px;
+	}
+#tVoiceArea h4 {
+	color: #6B0E64;
+	font-size: 15px;
+	font-weight: bold;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #6B0E64;
+	}
+#tVoiceArea .voiceTitle {
+    font-size: 120%;
+    font-weight: bold;
+    margin: 10px 0;
+	}
+#tVoiceArea dl {
+	margin:10px 0;
+	}
+#tVoiceArea dt {
+	float:left;
+	width:200px;
+	}
+#tVoiceArea dd {
+	float:left;
+	width:160px;
+	margin-left:10px;
+	}
+#tVoiceArea dt + dd {
+    font-size: 110%;
+    font-weight: bold;
+	}
+
+/*system*/
+.ProjectTitle {
+	font-size: 138.5%;
+	color: #ff6699 ;
+	padding: 0px;
+	margin: 20px 0 5px;
+	line-height:1.3;
+}
+
+#Project dl {
+	width:370px;
+	margin-bottom:30px;
+	}
+	#Project dt {
+		background:url(../images/common/bg_dig.png) ,-webkit-gradient(linear, center top, center bottom, 
+		from(#961886), 
+		to(#85167C));
+		
+		background:url(../images/common/bg_dig.png) , -moz-linear-gradient(top center,
+		#961886 0, 
+		#85167C 100%);
+		
+		background: url(../images/common/bg_dig.png) ,linear-gradient(to bottom,
+		#961886 0, 
+		#85167C 100%);
+		
+		background: url(../images/common/bg_dig.png) ,-ms-linear-gradient(top,
+		#961886 0, 
+		#85167C 100%);
+		line-height:30px;
+		color:#FFF;
+		border-radius:5px 5px 0 0;
+		margin:10px 0 0 0;
+		padding:0 0 0 10px;
+		font-size:110%;
+	}
+	#Project dd {
+		width:320px;
+		margin:15px auto 0 auto;
+	}
+.gyokaiSeminar dt {
+	background:url(../images/common/bg_dig.png) ,-webkit-gradient(linear, center top, center bottom, 
+	from(#961886), 
+	to(#85167C));
+	
+	background:url(../images/common/bg_dig.png) , -moz-linear-gradient(top center,
+	#961886 0, 
+	#85167C 100%);
+	
+	background: url(../images/common/bg_dig.png) ,linear-gradient(to bottom,
+	#961886 0, 
+	#85167C 100%);
+	
+	background: url(../images/common/bg_dig.png) ,-ms-linear-gradient(top,
+	#961886 0, 
+	#85167C 100%);
+
+		line-height:30px;
+		color:#FFF;
+		border-radius:5px 5px 0 0;
+		margin:10px 0 0 0;
+		padding:5px 0 0 10px;
+		font-size:120%;
+	}
+.gyokaiSeminar dd {
+	background:#FEE7FD;
+	border:1px solid #FED3FC;
+	border-top:none;
+	padding:10px;
+	}
+
+.gyokaiSeminar dt span {
+		font-size:80%;
+	}
+
+#voiceArea section {
+	background-image:url(../images/common/bg_dig02.png);
+	padding:10px;
+	}
+	#voiceArea h3 {
+		border-bottom:none!important;
+		font-family: 'Chewy', cursive;
+		font-size:2em;
+		line-height:1;
+		margin-bottom:-10px;
+	}
+	#voiceArea section div {
+		background:#FFF;
+	}
+	#voiceArea section div dl {
+		padding-top:15px;
+		}
+	#voiceArea section div dt {
+		font-size:15px;
+		font-weight:bold;
+		margin-bottom:10px;
+		}
+	#voiceArea section div img {
+		height:200px;
+		margin-top:-10px;
+		margin-right:15px;
+		margin-left:10px;
+		float:left;
+		}
+	#voiceArea section .voiceName {
+		color:#666;
+		margin-bottom:15px;
+		}
+	#voiceArea section .voiceName:before {
+		content: "●";
+		color:#F00;
+		}
+
+/*color*/
+.colB {
+	background:#F574B1;
+	}
+.colH {
+  background:#7DBF4C;
+	}
+.colA {
+	background:#3ABFF0;
+	}
+.colT {
+	background:#F9BE00;
+	}
+.colC {
+	background:#8F65A8;
+	}
+.colP {
+	background:#AE3939;
+	}
+/* Box Height
+------------------------- */
+
+.oneWex:after,
+.IndexSection:after,
+.clearfix:after {
+	display: block;
+	visibility: hidden;
+	content: ".";
+	clear: both;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+}
+	* html .oneWex,
+	* html .IndexSection,
+	* html .clearfix {
+		zoom: 1;
+	} /* IE6 */
+	*:first-child+html .oneWex,
+	*:first-child+html .IndexSection,
+	*:first-child+html .clearfix {
+		zoom: 1;
+	} /* IE7 */
+
+	#eventSection div a:hover {
+		opacity: .75; /* Standard: FF gt 1.5, Opera, Safari */
+		filter: alpha(opacity=75); /* IE lt 8 */
+		-ms-filter: "alpha(opacity=75)"; /* IE 8 */
+		-khtml-opacity: .75; /* Safari 1.x */
+		-moz-opacity: .75; /* FF lt 1.5, Netscape */
+	}

@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+/*ここからrss.php用*/
+
+#feed_blog{
+	line-height: 1.4;
+ 	border: 1px solid #eed2ff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 246px;
+}
+
+#feed_blog:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+#feed_blog a{
+	overflow: hidden;
+	display: block;
+	text-decoration:none;
+}
+
+#feed_blog a:hover{
+	text-decoration:none;
+}
+
+#feed_blog li:first-child .blog-md{
+	width: 270px;
+}
+
+#feed_blog li .blog-md{
+	width: 390px;
+	margin: 20px 0 0;
+	padding: 0 0 10px;
+}
+
+#feed_blog li .blog-md:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+#feed_blog li{                                                                                             
+	float: left;
+}
+#feed_blog li:first-child .blog-md{
+	overflow: hidden;
+	border-right: 1px dotted #ccc;                         
+}
+
+#feed_blog li:last-child .blog-md{
+	width: 380px;
+	border-top: 1px dotted #ccc;
+	margin: 0;
+	padding: 10px 0;                       
+}
+
+#feed_blog li .title{
+	margin: 10px 0 0;
+    color: #fe4683;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#feed_blog li:first-child .title{
+	width: 100%;
+	margin: 0 0 0 10px;
+    font-size: 16px;
+}
+
+#feed_blog li:last-child .title{
+	padding: 10px 0 0;
+}
+
+#feed_blog li .day{                                                                                                        
+	font-size: 14px;
+	text-decoration: none                                                                                                                                       
+}
+
+#feed_blog li:first-child .day{  
+	width: 100%;                                                                                                      
+	margin: 0 0 0 10px;                                                                                                                                      
+}
+
+
+#feed_blog li .title,#feed_blog li .day{
+	float: left;
+	width: 250px;
+	margin: 0 0 0 10px;
+}
+
+#feed_blog li:first-child .blog-image{
+	overflow: hidden;
+	float: none;
+	width: 210px;
+	height: 157px;
+	margin: 0 auto 10px;
+}
+
+#feed_blog li .blog-image{
+	overflow: hidden;
+	float: left;
+	width: 120px;
+	height: 90px;
+}
+
+#feed_blog li .blog-image img{
+	float: left;
+	width: 120px;
+	margin: 0 10px;
+	padding: 0 0 15px;
+ 
+}
+
+#feed_blog li:first-child .blog-image img{
+	width: 210px;
+	float: none;
+	margin: 0;
+	padding: 0;
+}
+
+#feed_blog li:last-child .blog-image img{
+	margin: 10px;
+	padding: 0 0 10px;
+}
+
+#feed_blog li{
+	-webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all  0.4s ease;
+	text-decoration:none;
+}
+
+#feed_blog li:hover{
+	background-color:#FFDDE8;
+	text-decoration:none;
+}
+
