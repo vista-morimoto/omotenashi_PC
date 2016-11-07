@@ -1,0 +1,290 @@
+@charset "utf-8";
+
+/*----------------------------------------------------
+	共通
+----------------------------------------------------*/
+/* スクロールバーの有無によるズレ対策 */
+html {
+	overflow-y: scroll;
+}
+
+body {
+	font-family: "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+}
+
+input, textarea {
+	font-family: "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+}
+
+/* for IE6 */
+* html body {
+	font-family: "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+}
+* html input, * html textarea {
+	font-family: "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+}
+
+
+
+
+
+/* リンク
+----------------------------------------------------*/
+a {
+	color:#665847;
+}
+
+a:link {
+	color:#665847;
+}
+
+a:visited {
+	color:#9F81B1;
+}
+
+a:hover {
+	color:#9F81B1;
+}
+
+a:active {
+	color:#665847;
+}
+
+/* よく使いそうなCSS3
+----------------------------------------------------*/
+#selectors {
+/* 角丸 */
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+
+/* 角丸個別 */
+	-webkit-border-top-right-radius: 15px;
+	-moz-border-radius-topright: 15px;
+	border-top-right-radius: 15px;
+
+/* ボックスに影 */
+	-webkit-box-shadow: 1px 1px 3px #999;
+	-moz-box-shadow: 1px 1px 3px #999;
+	box-shadow: 1px 1px 3px #999;
+
+/* テキストに影 */
+	text-shadow: 1px 1px 0px #999;
+}
+
+/* 汎用
+----------------------------------------------------*/
+/* clerfix */
+#contents:after {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0.1px;
+	font-size: 0.1em;
+	line-height: 0;
+	clear: both;
+}
+.clearfix {
+	display: block;
+	min-height: 1%;
+}
+.clearfix:after {
+	clear: both;
+	content:".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+.clear { clear: both;}
+
+/* フロート 
+------------------------------------------------------------------ */
+.flL    { display: inline; float: left;}
+.flR    { display: inline; float: right;}
+.flImgL { display: inline; float: left; margin-right: 10px;}
+.flImgR { display: inline; float: right; margin-left: 10px;}
+.ftBox  { overflow: hidden; *zoom: 1;}
+
+/* テキスト 
+------------------------------------------------------------------ */
+.taL { text-align: left   !important;}
+.taC { text-align: center !important;}
+.taR { text-align: right  !important;}
+
+/* フォント
+----------------------------------------------------*/
+/*.fs8  { font-size:  70%;}*/
+.fs10   { font-size:  77%;}
+.fs12   { font-size: 93%;}
+.fs13   { font-size: 100%;}
+.fs14   { font-size: 108%;}
+.fs15   { font-size: 116%;}
+.fs16  { font-size: 123.1%;}
+.fs18 { font-size: 138.5%;}
+.fs20 { font-size: 153.9%;}
+.fs22 { font-size: 167%;}
+.fs24 { font-size: 182%;}
+.fs26 { font-size: 197%;}
+.fsB { font-weight:bold;}
+
+
+/* カラー
+----------------------------------------------------*/
+.fs-red{ color:#990000;}
+.fs-red2{ color:#FF0000;}
+.fs-blue{ color:#039;}
+.fs-bk{ color:#333;}
+.fs-white{ color:#ffffff;}
+.fs-purple{ color:#920883;}
+.fs-pink{ color:#E55E70;}
+
+.fs-bridal{ color:#E85B6D;}
+.fs-celemony{ color:#784F91;}
+.fs-hotel{ color:#7DC04D;}
+.fs-airline{ color:#36BEF0;}
+.fs-travel{ color:#EFAC17;}
+
+/* !Margin ------------------------------------------------------------------ */
+.mt00 { margin-top: 0   !important;}
+.mt05 { margin-top: 5px !important;}
+.mt10 { margin-top:10px !important;}
+.mt15 { margin-top:15px !important;}
+.mt20 { margin-top:20px !important;}
+.mt30 { margin-top:30px !important;}
+.mt40 { margin-top:40px !important;}
+.mt50 { margin-top:50px !important;}
+.mr00 { margin-right: 0   !important;}
+.mr05 { margin-right: 5px !important;}
+.mr10 { margin-right:10px !important;}
+.mr15 { margin-right:15px !important;}
+.mr20 { margin-right:20px !important;}
+.mr30 { margin-right:30px !important;}
+.mb00 { margin-bottom: 0   !important;}
+.mb05 { margin-bottom: 5px !important;}
+.mb10 { margin-bottom:10px !important;}
+.mb15 { margin-bottom:15px !important;}
+.mb20 { margin-bottom:20px !important;}
+.mb30 { margin-bottom:30px !important;}
+.ml00 { margin-left: 0   !important;}
+.ml05 { margin-left: 5px !important;}
+.ml10 { margin-left:10px !important;}
+.ml15 { margin-left:15px !important;}
+.ml20 { margin-left:20px !important;}
+.ml30 { margin-left:30px !important;}
+
+/* !Padding  ---------------------------------------------------------------- */
+.pt00 { padding-top: 0   !important;}
+.pt05 { padding-top: 5px !important;}
+.pt10 { padding-top:10px !important;}
+.pt15 { padding-top:15px !important;}
+.pt20 { padding-top:20px !important;}
+.pt30 { padding-top:30px !important;}
+.pr00 { padding-right: 0   !important;}
+.pr05 { padding-right: 5px !important;}
+.pr10 { padding-right:10px !important;}
+.pr15 { padding-right:15px !important;}
+.pr20 { padding-right:20px !important;}
+.pb00 { padding-bottom: 0   !important;}
+.pb05 { padding-bottom: 5px !important;}
+.pb10 { padding-bottom:10px !important;}
+.pb15 { padding-bottom:15px !important;}
+.pb20 { padding-bottom:20px !important;}
+.pl00 { padding-left: 0   !important;}
+.pl05 { padding-left: 5px !important;}
+.pl10 { padding-left:10px !important;}
+.pl15 { padding-left:15px !important;}
+.pl20 { padding-left:20px !important;}
+
+/* !Padding  ---------------------------------------------------------------- */
+.wd200 {width:200px !important;}
+.wd250 {width:250px !important;}
+.wd300 {width:300px !important;}
+.wd350 {width:350px !important;}
+.wd400 {width:400px !important;}
+.wd450 {width:450px !important;}
+.wd500 {width:500px !important;}
+
+/* !Rollover  ---------------------------------------------------------------- */
+.groupLink a:hover,
+a.btnLink:hover,
+.btnOver:hover {
+	opacity:0.7;
+	-webkit-opacity:0.7;
+    -moz-opacity: 0.7;
+    -o-opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+	}
+
+
+/* テキストリンク  ---------------------------------------------------------------- */
+.btnTextLink a {  
+  /* サイズ指定 */
+  width: auto;
+  height: 38px;
+  display: block;
+  box-sizing: border-box;
+  margin: 10px 0;
+  
+  /* 縦横中央揃え */
+  text-align: center;
+  line-height: 40px;
+  
+  /* 色指定 */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1.00, #FFFFFF), color-stop(0.00, #FBDBE0));/* safari用 */
+  background: -webkit-linear-gradient(top, #FFFFFF 0%, #FBDBE0 100%);/* Chrome用 */
+  background: -ms-linear-gradient(top, #FFFFFF 0%, #FBDBE0 100%);
+  background: linear-gradient(top, #FFFFFF 0%, #FBDBE0 100%);
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffffff,endColorstr=#fffbdbe0,GradientType=0)";
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffffff,endColorstr=#fffbdbe0,GradientType=0);
+
+  border: 1px solid #EB6D80;
+  color: #EB6C7F;
+  
+  /* 角丸 */
+  border-radius: 25px;
+  
+  /* その他 */
+  text-decoration: none;
+  font-weight:bold;
+  font-size: 93%;
+  
+}
+ 
+.btnTextLink a:hover {
+  /* 反転 */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1.00, #FBDBE0), color-stop(0.00, #F7B3BD));/* safari用 */
+  background: -webkit-linear-gradient(top, #FBDBE0 0%, #F7B3BD 100%);/* Chrome用 */
+  background: -ms-linear-gradient(top, #FBDBE0 0%, #F7B3BD 100%);
+  background: linear-gradient(top, #FBDBE0 0%, #F7B3BD 100%);
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#fffbdbe0,endColorstr=#fff7b3bd,GradientType=0)";
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#fffbdbe0,endColorstr=#fff7b3bd,GradientType=0);
+}
+
+.btnTextLink a span.arrow {
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/btn_arrow.png);
+  background-repeat:no-repeat;
+  background-size: 16px 16px;
+  
+ 
+  /* 位置合わせ用 */
+  vertical-align: middle;
+  margin: 0 10px 5px 0;
+  padding:0 0 0 20px;
+}
+
+a span.arrowLink {
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/btn_arrow.png);
+  background-repeat:no-repeat;
+  background-size: 16px 16px;
+  
+ 
+  /* 位置合わせ用 */
+  vertical-align: middle;
+  margin: 0 10px 5px 0;
+  padding:0 0 0 20px;
+}

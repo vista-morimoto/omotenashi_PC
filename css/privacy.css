@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+#privacy .normalBox{
+	width:1000px;
+	margin:auto;
+	padding:10px;
+	line-height:1.3;
+	}
+#privacy .normalBox p{
+	padding:0 0 10px 0;
+	}
+#privacy .normalBox p strong{
+	display:block;
+	font-size:16px;
+	font-weight:bold;
+	color:#060;
+	margin-bottom:3px;
+	}
+#privacy .normalBox p em{
+	display:block;
+	font-size:14px;
+	font-weight:bold;
+	
+	padding:10px 0 0 0;
+	border-top:#CCC dotted 1px;
+	}
+#privacy .normalBox p.notes{
+	font-size:10px;
+	}
+#privacy .normalBox img{
+	margin:10px 0;
+	}
+#privacy .normalBox ol li{
+	margin:10px 0;
+	}
+#privacy .normalBox ol li{
+	list-style:inside decimal;
+	margin:5px 0;
+	}
+#privacy .normalBox dl{
+	margin:20px 0;
+	}
+#privacy .normalBox dl dt{
+	margin-top:10px;
+	font-weight:bold;
+	}
+#privacy .normalBox dl dd{
+	padding:0 0 0 5px;
+	}
+#privacy .normalBox dl#personal{
+	margin:0;
+	}
+#privacy .normalBox p#ask{
+	padding:10px 10px 10px 20px;
+	background:#EEE;
+	margin:10px;
+	}
+#privacy .normalBox p#ask strong{
+	font-size:14px;
+	font-weight:bold;
+	color:#000;
+	margin-bottom:0;
+	}
+#privacy .normalBox p#name{
+	text-align:right;
+	margin:10px;
+	font-size:14px;
+	font-weight:bold;
+	}
+
+.normalBox h3 {
+	font-size: 1.4em;
+	font-weight:bold;
+	padding: 0 10px;
+	margin:15px 0 15px 0;
+	line-height: 26px;
+}
+
+.normalBox > div {
+	margin:0 25px;
+	}
+	.normalBox ul {
+		background:#EEE;
+		padding:15px;
+		}
+	.normalBox ul li {
+		margin-bottom:5px;
+		}

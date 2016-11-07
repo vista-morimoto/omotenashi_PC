@@ -1,0 +1,855 @@
+@charset "utf-8";
+
+#eventGnavi {
+	background:url(../images/event/bgGnav.gif);
+	padding:8px 0;
+	}
+#eventGnavi ul {
+	width:1000px;
+	margin:0 auto;
+}
+	#eventGnavi ul li {
+		width:166px;
+		float:left;
+		text-align:center;
+		font-weight:bold;
+	}
+	#eventGnavi ul li a {
+		display:block;
+		text-decoration:none;
+		line-height:30px;
+		border-right:1px solid #D9B0DF;
+	}
+		#eventGnavi ul li:first-child a {
+			border-left:1px solid #D9B0DF;
+			}
+	#eventGnavi ul li a:hover {
+		background:#FFF;
+		
+		opacity: .35; /* Standard: FF gt 1.5, Opera, Safari */
+		filter: alpha(opacity=35); /* IE lt 8 */
+		-ms-filter: "alpha(opacity=35)"; /* IE 8 */
+		-khtml-opacity: .35; /* Safari 1.x */
+		-moz-opacity: .35; /* FF lt 1.5, Netscape */
+		}
+#catIndex {
+	margin-left:-12px;
+}
+	#catIndex li {
+		float:left;
+		margin:0 0 0 12px;
+		width:142px;
+	}
+	#catIndex li img {
+		width:100%;
+	}
+#otherIndex {
+	margin-left:-20px;
+	}
+	#otherIndex li {
+		width:370px;
+		float:left;
+		margin:20px 0 0 20px;
+	}
+	#otherIndex li a {
+		border:1px solid #CCC;
+		text-decoration:none;
+		display:block;
+	}
+	#otherIndex dt {
+		background:url(../images/event/bgGnav.gif);
+		line-height:50px;
+		padding-left:10px;
+		}
+	#otherIndex dd {
+		padding:10px;
+	}
+	#otherIndex dd img {
+		float:left;
+		margin:0 15px 0 0;
+	}
+
+.pageGoTop {
+	text-align:right;
+	font-size:93%;
+	margin:10px 0 0 0;
+	}
+	.pageGoTop a {
+		text-decoration:underline;
+		color:#666;
+		}
+	.pageGoTop a:before {
+		content: "▲";	
+		}
+	.pageGoTop a:hover {
+		text-decoration:none;
+		}
+.TitStyle {
+	background:url(../images/event/bgGnav.gif);
+	border-radius:3px;
+	font-size: 138.5%;
+	padding: 13px 10px 10px 20px;
+	}
+/*------------------------------------------------------------
+ trial
+------------------------------------------------------------*/
+#EventWrapper {
+	margin-left:-20px;
+	}
+.OneEvent {
+	width:370px;
+	float:left;
+	margin:20px 0 0 20px;
+}
+	.OneEvent.Long {
+		width:760px;
+		}
+.OneEvent h3 {
+	padding:5px;
+	font-size:123%;
+}
+.OneEvent h3 span {
+	background:url(../images/event/bgDot.png);
+	display:inline-block;
+	padding:4px 5px;
+	border-radius:2px;
+	color:#171717;
+	margin-right:10px;
+	font-size:77%;
+	}
+.OneEvent .Day {
+	padding:0 10px;
+	line-height:1.2;
+}
+.OneEvent .Day strong {
+	font-weight:normal;
+	font-family:Romanesco;
+	font-size:260%;
+	}
+.OneEvent .Day strong span {
+	font-size:40%;
+	}
+.OneEvent .Day strong span.colSat {
+	color:#06F;
+	}
+.OneEvent .Day strong span.colSun {
+	color:#F00;
+	}
+	
+	
+.OneEventInner {
+	padding:15px;
+	}
+.OneEventInner h4 {
+	line-height:1.5;
+	}
+#SearchDay {
+	padding:10px;
+	border:1px solid #EEE;
+	}
+#SearchDay h3 {
+	background:#DFDFDF;
+	color:#171717;
+	padding:5px;
+	margin-bottom:10px;
+	font-size:108%;
+	border-radius:3px;
+}
+#SearchDay li {
+	display:inline-block;
+	padding:0 20px;
+	margin:0 10px 10px 0;
+	border:1px solid #DFDFDF;
+	font-size:300%;
+	font-family:Romanesco;
+	line-height:1;
+	cursor:pointer;
+
+	border-top:3px solid #D19FD9;
+}
+
+#SearchDay li.Sat {
+	border-top:3px solid #0000FF;
+	background:#F4F4FF;
+	}
+
+#SearchDay li.Sun {
+	border-top:3px solid #DF040E;
+	background:#FFEEEF;
+	}
+
+h2.detailTit {
+	font-size:183%;
+	font-weight:bold;
+	}
+
+p.Img {
+	width:198px;
+	float:left;
+	margin:0 15px 5px 0;
+	}
+.EventBottoms {
+	clear:both;
+	padding-top:10px;
+	}
+.JoinBtn {
+	width:80%;
+	margin:0 auto;
+}
+
+	.JoinBtn a {
+
+		display:block;
+		background:#FF0303;
+		text-align:center;
+		border-radius:100px;
+		font-size:131%;
+		color:#FFF;
+		padding:7px 0;
+	
+		font-weight:bold;
+		text-shadow:0 -1px 0px #CF0000,0 -2px 0px #CF0000;
+		text-align:center;
+		display:block;
+		text-decoration:none;
+		
+		border:1px solid #CE0000;
+		
+		background:url(../images/common/arrow_trialbtn.png) 20px center no-repeat,-moz-linear-gradient(rgba(255,0,0,1), rgba(255,2,2,1));
+		background:url(../images/common/arrow_trialbtn.png) 20px center no-repeat,-webkit-gradient(linear, 100% 0%, 100% 100%, from(rgba(255,0,0,1)), to(rgba(255,2,2,1)));
+		
+		/*内側のライン*/
+		box-shadow:1px 2px 2px rgba(255,255,255,0.3), 0px 1px 0px rgba(255,255,255,0.3) inset, 0px -1px 0px rgba(255,255,255,0.3) inset;
+
+	}
+	
+.OtherBtn {
+	width:80%;
+	margin:0 auto;
+}
+	.OtherBtn a {
+		display:block;
+		background:#CCCCCC;
+		text-align:center;
+		border-radius:100px;
+		font-size:131%;
+		color:#333;
+		padding:7px 0;
+	}
+.LookAll {
+	margin-left:20px;
+	text-align:center;
+	clear:both;
+	padding:20px 0 0 0;
+	}
+.LookAll span {
+	display:inline-block;
+	margin:0 auto;
+	padding:5px 20px;
+	border:1px solid #CCC;
+	background: #EEE;
+	border-radius:5px;
+	cursor:pointer;
+	}
+
+#SelectTit {
+	background:#F2E3FF;
+	font-size:123%;
+	border-radius:5px;
+	padding:5px 10px;
+	margin:20px 0 0 20px;
+}
+	#SelectTit strong {
+		font-size:182%;
+	}
+
+.borderTit {
+	border-bottom:3px solid #B50081;
+	padding-bottom:15px;
+	line-height:1.5;
+	}
+
+/*---ブライダル---*/
+.Bridal h3 {
+	background:#FF679A;
+	color:#FFF;
+	}
+	.Bridal .OneEvent {
+		background:#FFE5EE;
+	}
+.Bridal h2.detailTit {
+	color:#FF679A;
+}
+	.Bridal .OneEvent dl.stress {
+		border:3px solid #FF679A;
+		display:inline-block;
+		border-radius:5px;
+		padding:10px;
+		background:#FFF;
+		}
+	.Bridal .OneEvent dl.stress dt {
+		color:#FF679A;
+		font-weight:bold;
+		}
+/*---セレモニー---*/
+.Ceremony h3 {
+	background:#6C428A;
+	color:#FFF;
+	}
+	.Ceremony .OneEvent {
+		background:#FFF4F9;
+	}
+.Ceremony h2.detailTit {
+	color:#6C428A;
+}
+	.Ceremony .OneEvent dl.stress {
+		border:3px solid #6C428A;
+		display:inline-block;
+		border-radius:5px;
+		padding:10px;
+		background:#FFF;
+		}
+	.Ceremony .OneEvent dl.stress dt {
+		color:#6C428A;
+		font-weight:bold;
+		}
+
+
+
+/*---ホテル---*/
+.Hotel h3 {
+	background:#7AC52D;
+	color:#FFF;
+	}
+	.Hotel .OneEvent {
+		background:#D9F4E3;
+	}
+.Hotel h2.detailTit {
+	color:#7AC52D;
+}
+	.Hotel .OneEvent dl.stress {
+		border:3px solid #7AC52D;
+		display:inline-block;
+		border-radius:5px;
+		padding:10px;
+		background:#FFF;
+		}
+	.Hotel .OneEvent dl.stress dt {
+		color:#7AC52D;
+		font-weight:bold;
+		}
+
+/*---トラベル---*/
+.Travel h3 {
+	background:#FF9A02;
+	color:#FFF;
+	}
+	.Travel .OneEvent {
+		background:#FEF4D3;
+	}
+.Travel h2.detailTit {
+	color:#FF9A02;
+}
+	.Travel .OneEvent dl.stress {
+		border:3px solid #FF9A02;
+		display:inline-block;
+		border-radius:5px;
+		padding:10px;
+		background:#FFF;
+		}
+	.Travel .OneEvent dl.stress dt {
+		color:#FF9A02;
+		font-weight:bold;
+		}
+
+/*---エアライン---*/
+.airLine h3 {
+	background:#3ABFF0;
+	color:#FFF;
+	}
+	.airLine .OneEvent {
+		background:#F4FCFF;
+	}
+.airLine h2.detailTit {
+	color:#3ABFF0;
+}
+	.airLine .OneEvent dl.stress {
+		border:3px solid #3ABFF0;
+		display:inline-block;
+		border-radius:5px;
+		padding:10px;
+		background:#FFF;
+		}
+	.airLine .OneEvent dl.stress dt {
+		color:#3ABFF0;
+		font-weight:bold;
+		}
+
+/*---鉄道---*/
+.Railroad h3 {
+	background:#FF6600;
+	color:#FFF;
+	}
+	.Railroad .OneEvent {
+		background:#FEE6D3;
+	}
+.Railroad h2.detailTit {
+	color:#FF9A02;
+}
+	.Railroad .OneEvent dl.stress {
+		border:3px solid #FF9A02;
+		display:inline-block;
+		border-radius:5px;
+		padding:10px;
+		background:#FFF;
+		}
+	.Railroad .OneEvent dl.stress dt {
+		color:#FF9A02;
+		font-weight:bold;
+		}
+
+
+.eventMiniNav {
+	margin-bottom:30px;
+	padding-bottom:5px;
+	border-bottom:1px solid #EEE;
+}
+.eventMiniNav dt,
+.eventMiniNav dd {
+	display:inline-block;
+	margin-right:10px;
+	}
+	.eventMiniNav dd a {
+		padding-left:20px;
+	}
+	.eventMiniNav dd.MiniNavB a {
+		color:#FF7EA8;
+		background:url(../images/course/arrowB.gif) left center no-repeat;
+	}
+	.eventMiniNav dd.MiniNavC a {
+		color:#BF76BA;
+		background:url(../images/course/arrowC.gif) left center no-repeat;
+	}
+	.eventMiniNav dd.MiniNavR a {
+		color:#FF6600;
+		background:url(../images/course/arrowR.gif) left center no-repeat;
+	}
+	.eventMiniNav dd.MiniNavH a {
+		color:#80CE32;
+		background:url(../images/course/arrowH.gif) left center no-repeat;
+	}
+	.eventMiniNav dd.MiniNavT a {
+		color:#F7BA05;
+		background:url(../images/course/arrowT.gif) left center no-repeat;
+	}
+	.eventMiniNav dd.MiniNavA a {
+		color:#3ABFF0;
+		background:url(../images/course/arrowA.gif) left center no-repeat;
+	}
+
+
+/*---icoSpecial(add 20150409)---*/
+.OneEvent {
+	position: relative;
+}
+.OneEvent .icoSpecial {
+    position: absolute;
+    right: -25px;
+    top: -20px;
+}
+
+/*------------------------------------------------------------
+ explantation/
+------------------------------------------------------------*/
+
+.infoIco {
+	width:535px;
+	float:left;	
+	}
+	.infoIco li {
+		display:inline-block;
+		padding:2px 18px 0;
+		line-height:1.5em;
+		margin:0 10px 10px 0;
+		}
+	li.reserve{
+	   border-radius: 5px;        
+	   -moz-border-radius: 5px;   
+	   -webkit-border-radius: 5px; 
+	   background-color: #F26161;
+	   color:#fff;
+	   font-weight:bold;
+		}
+	li.exhibition{
+	   border-radius: 5px;        
+	   -moz-border-radius: 5px;   
+	   -webkit-border-radius: 5px; 
+	   background-color: #997B03;
+	   color:#fff;
+	   font-weight:bold;
+		}
+	li.taikenTime{
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		color: #000;
+		background:url(../images/event/icoTime.png) no-repeat #DCDCDC ;
+		background-position: 8px 2px;
+		padding:2px 10px 0 28px ;
+		}
+
+/*.arrowTime{
+	background:#f00 url(../images/event/arrowTime.png) right center no-repeat;
+	width:20px;
+	padding:5px 0;
+	display:inline-block;
+	}*/
+
+.arrowTime:before {
+	content: url(../images/event/arrowTime.png);
+	margin:0 4px 0 8px;
+}
+
+p.subHead {
+	color:#F26161;
+	font-size:125%;
+	line-height:1.8;
+	}
+
+
+
+/*------------------------------------------------------------
+ explantation/parent
+------------------------------------------------------------*/
+.baseBox dl {
+	border:1px solid #DDD;
+	}
+.baseBox dt {
+	background:url(../images/event/bgGnav.gif);
+	padding-left:10px;
+	padding:5px 0 5px 10px;
+	}
+.baseBox dd {
+	padding:10px;
+}
+.baseBox dd img {
+	float:left;
+	margin:0 15px 0 0;
+}
+/*------------------------------------------------------------
+ explantation/guidance
+------------------------------------------------------------*/
+.GuidanceNav {
+	display:table;
+	width:100%;
+	table-layout:fixed;
+	}
+	.GuidanceNav li {
+		display:table-cell;
+		text-align:center;
+		}
+	.GuidanceNav li a {
+		background:url(../images/event/bgGnav.gif);
+		display:block;
+		padding:10px;
+		border-left:2px solid #FFF;
+		text-decoration:underline;
+	}
+	.GuidanceNav li a:after {
+		content: "▼";
+		font-size:77%;
+		color:#C07BCA;
+	}
+	.GuidanceNav li a:hover {
+		opacity: .75; /* Standard: FF gt 1.5, Opera, Safari */
+		filter: alpha(opacity=75); /* IE lt 8 */
+		-ms-filter: "alpha(opacity=75)"; /* IE 8 */
+		-khtml-opacity: .75; /* Safari 1.x */
+		-moz-opacity: .75; /* FF lt 1.5, Netscape */
+	}
+.guidanceSection h2 {
+	font-size:153%;
+	font-weight:bold;
+	border-bottom:3px solid #C07BCA;
+	padding:5px;
+	}
+table.tableEx caption{
+	margin:0 auto;
+	padding:20px 0 0 0;
+	text-indent:20px;
+	font-size:16px;
+	font-weight:bold;
+	color:#C07BCA;
+	text-align:left;
+}
+table.tableEx{
+	padding:0;
+	margin: 0 auto;
+	border:none;
+	border-spacing:0;
+
+	width:100%;
+	border:1px solid #F7EDF8;
+	background:#F7EDF8;
+}
+	table.tableEx th,
+	table.tableEx td{
+		margin:0;
+		padding:0;
+		border-collapse:collapse;
+		border:none;
+		border-spacing:0;
+	}
+	table.tableEx th {
+		padding:0.8em 0.5em;
+		background:#D9B0DF;
+		border-color:#C07BCA;
+		border-style:solid;
+		border-width:1px;
+		color:#FFFFFF;
+		font-weight:bold;
+		text-align:center;
+		font-size:12px;
+	}
+	table.tableEx td {
+		padding:0.8em;
+		line-height:1.5em;
+		border-color:#C07BCA;
+		border-style:solid;
+		border-width:1px;
+		font-size:12px;
+		text-align:left;
+		text-align:center;
+	}
+		table.tableEx tr:nth-child(even) td {
+			background:#FFF;
+		}
+	table.tableEx span {
+		color:#FF0000;
+	}
+		table.tableEx td a {
+			color:#FF558C;
+			text-decoration:underline;
+			}
+		table.tableEx td a:hover {
+			text-decoration:none;
+		}
+
+.exDay {
+	border:1px solid #C07BCA;
+	border-radius:5px;
+	padding:10px;
+}
+	.exDay li {
+		font-weight:normal;
+		font-family:Romanesco;
+		font-size:260%;
+		}
+		.exDay span {
+			font-size:40%;
+			}
+
+/*------------------------------------------------------------
+ myschool/camp
+------------------------------------------------------------*/
+#CampReserve dl {
+	width:49%;
+	border:none;
+	}
+#CampReserve dt {
+	background:#DFDFDF;
+	}
+	#CampReserve dd p {
+		font-size:93%;
+		color:#666;
+		}
+	#CampReserve dd img {
+		float:none;
+	}
+/*------------------------------------------------------------
+ bus
+------------------------------------------------------------*/
+#BusTop .busBtnSet {
+	width:310px;
+	float:right;
+	}
+
+/*------------------------------------------------------------
+ table
+------------------------------------------------------------*/
+table.baseTable{
+	padding:0;
+	border-collapse:separate;
+	border:none;
+	border-spacing:0;
+}
+table.baseTable th,
+table.baseTable td{
+	margin:0;
+	padding:0;
+	border-collapse:separate;
+	border:none;
+	border-spacing:0;
+}
+
+table.baseTable{
+	width:100%;
+	border:1px solid #F7EDF8;
+	background:#F7EDF8;
+	margin: 0 auto;
+}
+table.baseTable th{
+	width:20%;
+	padding:0.8em 0.5em;
+	background:#D9B0DF;
+	border-color:#C07BCA #C07BCA #F7EDF8 #F7EDF8;
+	border-style:solid;
+	border-width:1px;
+	color:#FFFFFF;
+	font-weight:bold;
+	text-align:center;
+	font-size:12px;
+}
+table.baseTable td{
+	padding:0.8em;
+	line-height:1.5em;
+	border-color:#F7EDF8 #C07BCA #C07BCA #F7EDF8;
+	border-style:solid;
+	border-width:1px;
+	font-size:12px;
+	text-align:left;
+}
+table.baseTable span{
+	color:#FF0000;
+}
+
+/*------------------------------------------------------------
+ entry
+------------------------------------------------------------*/
+#eventSection {
+	background:url(../images/event/bgGnav.gif);
+	}
+#eventSection div {
+	width:152px;
+	float:left;
+	/*margin-left:9px;*/
+	}
+	#eventSection div a {
+		text-decoration:none;
+		display:block;
+		
+		border:1px solid #ccc;
+		border-left:0;
+		
+		padding:3px 3px 8px 3px;
+	}
+		#eventSection div:first-child a {
+			border-left:1px solid #ccc;
+			}
+	#eventSection div a:hover {
+		opacity: .75; /* Standard: FF gt 1.5, Opera, Safari */
+		filter: alpha(opacity=75); /* IE lt 8 */
+		-ms-filter: "alpha(opacity=75)"; /* IE 8 */
+		-khtml-opacity: .75; /* Safari 1.x */
+		-moz-opacity: .75; /* FF lt 1.5, Netscape */
+	}
+	#eventSection dl {
+		background:url(../images/common/ico_big_arrow.png) bottom center no-repeat;
+		padding-bottom:40px;
+	}
+	#eventSection p img {
+		border:1px solid #CCC;
+		}
+	#eventSection dt{
+		color:#FF548C;
+		}
+	#eventSection dd.innerLinks span {
+			background:url(../images/common/arrow_black.png) left 0.2em no-repeat;
+			padding-left:10px;
+			color:#999999;
+		}
+	#eventSection dd.innerLinks {
+		text-align:right;
+	}
+	#eventSection dt {
+		font-weight:bold;
+	}
+	#eventSection dd {
+		font-size:93%;
+		}
+#entryIndex {
+	margin-left:-20px;
+}
+#entryIndex .relatedBox {
+	width:370px;
+	float:left;
+	margin:0 0 20px 20px;
+	}
+#entryIndex h4 {
+	background:url(../images/event/bgGnav.gif);
+	font-size:123%;
+	line-height:25px;
+	padding:0 8px;
+	margin:0 0 15px 0;
+	}
+	#entryIndex li {
+		margin-bottom:10px;
+	}
+	#entryIndex a {
+		background:	url(../images/common/arrow_black.png) left center no-repeat;
+		padding-left:15px;
+	}
+	#entryIndex ul {
+		padding-left:5px;
+		}
+
+.closed {
+	background:#FFD2D2;
+	border:3px solid #C00;
+	border-radius:3px;
+	padding:10px;
+	}
+
+/* Box Height
+------------------------- */
+
+#detailWrapper:after,
+#otherIndex:after,
+#otherIndex dd:after,
+#catIndex:after,
+#eventGnavi ul:after,
+.clearfix:after {
+	display: block;
+	visibility: hidden;
+	content: ".";
+	clear: both;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+}
+	* html #detailWrapper,
+	* html #otherIndex,
+	* html #otherIndex dd,
+	* html #catIndex,
+	* html #eventGnavi ul,
+	* html .clearfix {
+		zoom: 1;
+	} /* IE6 */
+	
+	*:first-child+html #detailWrapper,
+	*:first-child+html #otherIndex,
+	*:first-child+html #otherIndex dd,
+	*:first-child+html #catIndex,
+	*:first-child+html #eventGnavi ul,
+	*:first-child+html .clearfix {
+		zoom: 1;
+	} /* IE7 */
+
+#otherIndex a:hover,
+#catIndex li a:hover {
+	opacity: .75; /* Standard: FF gt 1.5, Opera, Safari */
+	filter: alpha(opacity=75); /* IE lt 8 */
+	-ms-filter: "alpha(opacity=75)"; /* IE 8 */
+	-khtml-opacity: .75; /* Safari 1.x */
+	-moz-opacity: .75; /* FF lt 1.5, Netscape */
+	}

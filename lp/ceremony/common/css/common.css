@@ -1,0 +1,768 @@
+@charset "utf-8";
+/* ========================================================*/
+
+body {
+	background:url(../images/header_back.gif) repeat-x top left;
+	margin:0;
+	padding:0;
+	line-height:1.5;
+}
+#wrap {
+	background:url(../images/contents_back.gif) repeat-x center bottom;
+}
+#container {
+	width:100%;
+	padding:0 0 40px 0;
+}
+
+/* ヘッダー
+----------------------------------------------------*/
+#header {
+	padding:10px 0 25px 0;
+	width:930px;
+	margin:0 auto;
+}
+#lead {
+	font-size:77%;
+	color:#665849;
+	float:left;
+	font-weight:normal;
+	
+	text-shadow:1px 1px 0px #FFFFFF;
+}
+#navi {
+	float:right;
+	height:15px;
+}
+#navi ul li {
+	margin:0 15px 0 0;
+	float:left;
+}
+#navi ul li.last-child {
+	margin:0;
+}
+#header h1 a {
+	margin:35px 0 0 0;
+	width:382px;
+	height:41px;
+	display:block;
+}
+#rightBox {
+	float:right;
+	margin:17px 0 0 0;
+	position:relative;
+	width:334px;
+}
+#headerBtn {
+	float:right;
+	width:334px;
+}
+#headerBtn img {
+	margin-left:5px;
+}
+#targetBox {
+	width:930px;
+	margin:0 auto 10px auto;
+}
+#targetBox ul li {
+	float:left;
+	padding:0 21px;
+	border-left:#665849 solid 1px;
+}
+#targetBox ul li.last-child {
+	border-right:#665849 solid 1px;
+}
+#targetBox ul.targetNavi li img {
+	vertical-align: middle;
+}
+
+#searchBox {
+	float:left;
+	width:170px;
+	margin:33px 0 0 0;
+	position:absolute;
+	top:0;
+	left:-175px;
+	font-size: 93% !important;
+}
+/*td.gsc-search-button {
+	background:url(../images/search.gif) no-repeat;
+	width:40px;
+	height:22px;
+}*/
+input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+    border-color: #CCCCCC;
+}
+input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
+    border-color: #920983 !important;
+    background-color: #920983 !important;
+    background-image: none !important;
+    filter: none;
+}
+.cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {
+	padding:5px 10px !important;
+}
+.gsc-search-box-tools .gsc-search-box .gsc-input {
+	padding:0 5px 0 0 !important;
+}
+.gsib_a {
+	padding:4px 6px !important;
+}
+input.gsc-input {
+	font-size: 93% !important;
+}
+form.gsc-search-box {
+	margin:0 !important;
+}
+table.gsc-search-box{
+	margin:0 !important;
+}
+
+
+
+/* グローバルナビ
+----------------------------------------------------*/
+#gnaviBox {
+	width:100%;
+	margin:0 auto;
+	/*background:url(../images/gnavi_back.jpg) repeat-x center top;*/
+}
+#gnaviBox #gnavi {
+	width:930px;
+	margin:0 auto;
+}
+#gnaviBox #gnavi li {
+	float:left;
+	margin:0px;
+	padding:0px;
+	/*height:57px;*/
+	position: relative;
+	display:block;
+}
+#gnaviBox #gnavi a 
+{
+    float: left;
+    height: 57px;
+    padding: 0;
+}
+#gnaviBox #gnavi li:hover > ul
+{
+    display: block;
+}
+ 
+/* Sub-menu */
+ 
+#gnaviBox #gnavi ul
+{
+    /*list-style: none;
+    margin: 0;
+    padding: 0;    
+    display: none;
+    position: absolute;
+    top: 57px;
+    left: 0;
+    z-index: 99999;
+	background: #FFF;
+	width:150px;
+	border:#CCCCCC solid 1px;*/
+}
+ 
+#gnaviBox #gnavi ul li
+{
+    /*float: none;
+    margin: 0 5px;
+    padding: 0;
+    display: block;  
+	border-bottom:#CCCCCC dotted 1px;
+	font-size: 93%;*/
+}
+ 
+#gnaviBox #gnavi ul li:last-child
+{
+    /*-moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;  
+	border-bottom:none;*/
+}
+ 
+#gnaviBox #gnavi ul a
+{
+   /* padding: 10px;
+    height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+	color:#E65987;
+	width:130px;*/
+}
+#gnaviBox #gnavi ul.w215 a {
+		width:215px;
+}
+
+*html #gnaviBox #gnavi ul a /* IE6 */
+{
+    height: 10px;
+    width: 150px;
+}
+*html #gnaviBox #gnavi ul.w215 a /* IE6 */
+{
+    height: 10px;
+    width: 215px;
+}
+ 
+*:first-child+html #gnaviBox #gnavi ul a /* IE7 */
+{
+    height: 10px;
+    width: 150px;
+}
+*:first-child+html #gnaviBox #gnavi ulw215 a /* IE7 */
+{
+    height: 10px;
+    width: 215px;
+}
+ 
+#gnaviBox #gnavi ul a:hover
+{
+    /*background: #E65987;
+	color:#FFF;
+    background: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba));
+    background: -moz-linear-gradient(top,  #04acec,  #0186ba) !important;
+    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#04acec', endColorstr='#0186ba'); *//* IE */
+}
+ 
+#gnaviBox #gnavi ul li:first-child a
+{
+    /*-moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;*/
+}
+ 
+#gnaviBox #gnavi ul li:first-child a:after
+{
+    /*content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #EB6D80;*/
+}
+ 
+#gnaviBox #gnavi ul li:first-child a:hover:after
+{
+   /* border-bottom-color: #04acec; */
+}
+ 
+#gnaviBox #gnavi ul li:last-child a
+{
+   /* -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;*/
+}
+ 
+/* Clear floated elements */
+#gnaviBox #gnavi:after
+{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+ 
+* html #gnavi             { zoom: 1; } /* IE6 */
+*:first-child+html #gnavi { zoom: 1; } /* IE7 */
+
+
+
+
+.dropdown {
+	float:left;
+    position:absolute;
+	display:none;
+    /*left:-9999em;  Hides the drop down */
+	padding:16px 0 0 0;
+	margin:-10px 0 0 0;
+	background-image: url(../images/navi_arrow.png);
+	background-repeat:no-repeat;
+	background-position:60px top;
+	z-index:10;
+
+}
+.dropdownBox {
+    background:#FFFFFF;
+	border:3px solid #920983;
+	text-align:left;
+    padding:10px 10px 10px 10px;
+	
+	/* Rounded Corners */
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+ 
+    /* Shadow */
+    -webkit-box-shadow:1px 1px 3px #000000;
+    -moz-box-shadow:1px 1px 3px #000000;
+    box-shadow:1px 1px 3px #000000;
+}
+.dropdown.w_invitation {
+	background-image: url(../images/navi_arrow2.png);
+	background-position:300px top;
+}
+.dropdown.w_schoollife {
+	background-image: url(../images/navi_arrow2.png);
+	background-position:230px top;
+}
+
+#gnaviBox #gnavi li:hover .dropdown {
+    top:57px;
+	display:block;
+}
+#gnaviBox #gnavi li:hover .dropdown.w_invitation {
+	right:0;
+}
+#gnaviBox #gnavi li:hover .dropdown.w_schoollife {
+	right:-155px;
+}
+
+#gnaviBox #gnavi li .dropdown ul {
+	float:left;
+}
+#gnaviBox #gnavi li .dropdown li {
+	float:none;
+	background:url(../images/navi_arrow3.gif) no-repeat left center;
+	border-bottom:#CCC dotted 1px;
+	padding:0 10px 5px 10px;
+	margin:5px 0 5px 0;
+	font-size:12px;
+}
+#gnaviBox #gnavi li .dropdown li a {
+	height:auto;
+	float:none;
+}
+#gnaviBox #gnavi li .dropdown .naviTit {
+	float:left;
+	background:#FCE2E7;
+	padding:10px;
+	margin:0 10px 0 0;
+	font-size:16px;
+	font-weight:bold;
+}
+#gnaviBox #gnavi li .dropdown .naviTit img {
+	padding:5px 0 0 0;
+}
+#gnaviBox #gnavi li .dropdown .naviTit a {
+	color:#920983;
+	height:auto;
+}
+#gnaviBox #gnavi li .dropdown .naviTit a:hover {
+	-moz-opacity: 0.7;
+    -webkit-opacity: 0.7;
+    -o-opacity: 0.7;
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+}
+
+
+.w_info {
+	width:350px;
+}
+.w_course {
+	width:475px;
+}
+.w_education {
+	width:385px;
+}
+.w_job {
+	width:385px;
+}
+.w_schoollife {
+	width:460px;
+}
+.w_invitation {
+	width:385px;
+}
+
+
+/* コンテンツ
+----------------------------------------------------*/
+.content {
+	width:930px;
+	margin:0 auto;
+	overflow:hidden;
+}
+#h2{
+	/*background:#FDEAEC;*/
+	margin-top:10px;
+	}
+h2{
+	width:930px;
+	margin:0 auto 10px;
+	}
+.titleBack{
+	background:url(../images/h3_title_back.jpg) no-repeat right bottom;
+	height:35px;
+	color:#FFF;
+	font-size: 138.5%;
+	font-weight:bold;
+	padding:15px 0px 0px 15px;
+	margin:0 0 10px 0;
+	}
+.titleBack1{
+	background:url(../images/h3_title_back.jpg) no-repeat right bottom;
+	height:32px;
+	color:#FFF;
+	font-size: 123.1%;
+	font-weight:bold;
+	padding:18px 0px 0px 15px;
+	margin:0 0 10px 0;
+	}
+.titleBack2{
+	background:url(../images/h3_title_back.jpg) no-repeat right bottom;
+	height:45px;
+	color:#FFF;
+	font-size: 138.5%;
+	font-weight:bold;
+	padding:5px 0px 0px 15px;
+	margin:0 0 10px 0;
+	line-height:1.2;
+	}
+.titleBack3{
+	background:url(../images/h4_title_back.jpg) no-repeat;
+	height:30px;
+	color:#E55E70;
+	font-size: 108%;
+	font-weight:bold;
+	padding:10px 0px 0px 55px;
+	margin:0 0 10px 0;
+	}
+.titleBack4{
+	background:url(../images/h4_title_back.jpg) no-repeat;
+	height:30px;
+	color:#E55E70;
+	font-size: 108%;
+	font-weight:bold;
+	padding:3px 0px 7px 55px;
+	margin:0 0 10px 0;
+	line-height:1.2;
+	}
+#pan {
+	font-size: 77%;
+	margin:0 auto 20px;
+}
+#leftColum {
+	float:left;
+	width:210px;
+	margin:0 20px 0 0;
+}
+#rightColum {
+	width:700px;
+	float:right;
+	margin:0;
+	padding:0;
+}
+.footer_attention {
+	font-size:77%;
+	margin:50px 0 0 0;
+	clear:both;
+	text-align:right;
+}
+/* 右infoBox
+----------------------------------------------------*/
+.infoBox {
+	border:#F5B6BF solid 1px;
+	padding:20px;
+	margin:20px 0 0 0;
+	text-align:center;
+	clear:both;
+}
+.infoBtn img {
+	margin:0 10px 0 0;
+	padding:0;
+}
+
+/* フッター
+----------------------------------------------------*/
+.topBtn {
+	text-align:right;
+	height:20px;
+	margin:10px 0 0 0;
+}
+.topBtnBox {
+	width:930px;
+	margin:0 auto;
+}
+.footer {
+	margin:0 auto;
+	width:100%;
+	/*height:172px;*/
+	background:url(../images/footer_back.gif) repeat-x left top;
+}
+.footerBox {
+	margin:0 auto;
+	width:930px;
+}
+.footerInfo {
+	padding:15px 0 10px 0;
+	/*float:left;*/
+}
+/*.footerPrivacy {
+	margin:40px 0 0 0;
+	float:right;
+}*/
+.footer .address {
+	text-align:left;
+	font-size:93%;
+	color:#665847;
+	text-shadow:1px 1px 0px #FFFFFF;
+	clear:both;
+}
+.footer .address img {
+	margin:5px 5px 0 10px;
+	vertical-align:-5px;
+}
+.copyRight {
+	font-size:93%;
+	color:#665847;
+	padding:5px 0 0 0;
+	text-shadow:1px 1px 0px #FFFFFF;
+}
+*:first-child+html .copyRight {
+	padding:20px 0 0 0;
+}
+
+.footer .socialLink {
+	margin:8px 0 0px 15px;
+	font-size:93%;
+	width:200px;
+	float:left;
+	color:#665847;
+	text-shadow:1px 1px 0px #FFFFFF;
+}
+
+/* フッターサイトマップ
+----------------------------------------------------*/
+#footerSitemap {
+	background:url(../images/footer_link_back.jpg) repeat-x top;
+	padding:0 0 10px 0;
+}
+#sitemapNavi {
+	width:930px;
+	margin:0 auto;
+	line-height:1.7;
+	/*overflow:hidden;*/
+}
+#sitemapNavi .colum01,
+#sitemapNavi .colum02,
+#sitemapNavi .colum03,
+#sitemapNavi .colum04 {
+	float:left;
+	padding:0 30px 0 0;
+}
+#sitemapNavi .colum05 {
+	float:left;
+	padding:0 0 0 0;
+}
+#sitemapNavi dl {
+	padding:15px 20px 0 0;
+}
+#sitemapNavi .colum05 dl {
+	padding:20px 0 0 0;
+}
+#sitemapNavi dl dt {
+	font-size: 108%;
+	font-weight:bold;
+}
+#sitemapNavi dl dd {
+	font-size:  77%;
+	background:url(../images/footer_link_arrow.png) no-repeat center left;
+	padding:0 0 0 10px;
+}
+#sitemapNavi dl dd.arrowTop{
+	background-position:left 4px;
+}
+
+
+#sitemapNavi dl dt a:link,
+#sitemapNavi dl dt a:visited, 
+#sitemapNavi dl dt a:active {
+	color:#EB6D80;
+	text-decoration:none;
+}
+
+#sitemapNavi dl dt a:hover {
+	color:#EB6D80;
+	text-decoration:underline;
+}
+#sitemapNavi dl dd a:link,
+#sitemapNavi dl dd a:visited, 
+#sitemapNavi dl dd a:active {
+	color:#665847;
+	text-decoration:none;
+}
+
+#sitemapNavi dl dd a:hover {
+	color:#665847;
+	text-decoration:underline;
+}
+
+
+/* 姉妹校リンク
+----------------------------------------------------*/
+.sisterLink {
+	padding:15px 0 0 0;
+	width:930px;
+	margin:0 auto;
+}
+.sisterLink .linkTit {
+	color:#665848;
+	font-size:93%;
+	font-weight:bold;
+	margin:0;
+}
+.sisterLink li {
+	color:#666;
+	font-size:77%;
+	float:left;
+	padding:0 5px 0 5px;
+	border-right:#665848 solid 1px;
+}
+.sisterLink li.first-child {
+	border-left:#665848 solid 1px;
+}
+.sisterLink li a {
+	color:#666;
+}
+.sisterLink li visited,
+.sisterLink li a:hover {
+	color:#9F81B1;
+}
+
+
+/* フッターイベント資料請求
+----------------------------------------------------*/
+.footerBtn {
+	background:url(../images/footer_info_back.jpg) repeat-x left top;
+	height:100px;
+}
+.footerbtnBox {
+	width:930px;
+	margin:0 auto;
+}
+.footerbtnBox li {
+	float:left;
+}
+.footerbtnBox li.info {
+	width:249px;
+}
+.footerbtnBox li.info .textImg {
+	margin:20px 0 5px 5px;
+}
+.footerbtnBox li.info p {
+	font-size: 93%;
+}
+
+
+/* サブナビゲーション
+----------------------------------------------------*/
+/*20130830comment------
+#subNavi {
+	border:#EB7686 solid 1px;
+}
+#subNavi dl.menu {
+	border:#FFF solid 1px;
+}
+#subNavi dl.menu dt {
+	background:url(../images/subnavi_title_back.jpg) no-repeat;
+	height:58px;
+}
+#subNavi dl.menu dt a {
+	color:#FFF;
+	font-size: 123.1%;
+	font-weight:bold;
+	text-decoration:none;
+	padding:23px 0 11px 10px;
+	display:block;
+}
+------20130830comment*/
+/*#subNavi dl.menu dt.title {
+	color:#FFF;
+	font-size: 123.1%;
+	font-weight:bold;
+	text-decoration:none;
+	padding:23px 0 11px 10px;
+	display:block;
+	height:auto;
+}*/
+/*20130830comment------
+#subNavi dl.menu dd {
+	background:url(../images/subnavi_back.jpg) no-repeat;
+	border-bottom:#EB7686 dashed 1px;
+}
+#subNavi dl.menu dd a {
+	background:url(../images/subnavi_arrow.png) no-repeat 5px center;
+	padding:11px 0 10px 15px;
+	display:block;
+	text-decoration:none;
+}
+#subNavi dl.menu dd.last-child {
+	border-bottom: none;
+}
+
+#subNavi dl.menu dd a:link,
+#subNavi dl.menu dd a:visited {
+	color:#EB7685;
+}
+#subNavi dl.menu dd a:hover {
+	color:#EB7685;
+	background-color:#FCE2EA;
+	text-decoration:underline;
+}-----20130830comment*/
+
+#subNavi {
+	border:#EB7686 solid 1px;
+}
+#subNavi dl.menu {
+	border:#FFF solid 1px;
+}
+#subNavi dl.menu dt {
+	background:url(../images/subnavi_title_back.jpg) no-repeat;
+	height:58px;
+}
+#subNavi dl.menu dt a {
+	color:#FFF;
+	font-size: 123.1%;
+	font-weight:bold;
+	text-decoration:none;
+	padding:23px 0 11px 10px;
+	display:block;
+}
+
+#subNavi dl.menu dd {
+	border-bottom:#EB7686 dashed 1px;
+}
+#subNavi dl.menu dd a {
+	padding:20px 0 20px 70px;
+	display:block;
+	text-decoration:none;
+	font-size: 93%;
+}
+#subNavi dl.menu dd.last-child {
+	border-bottom: none;
+}
+
+#subNavi dl.menu dd a:link,
+#subNavi dl.menu dd a:visited {
+	color:#EB7685;
+}
+
+#subNavi dl.menu dd a:hover {
+	color:#EB7685;
+	background-color:#FCE2EA;
+	text-decoration:underline;
+}
+
