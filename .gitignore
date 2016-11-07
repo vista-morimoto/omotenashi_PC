@@ -19,3 +19,5 @@ digital/
 # だけど .png だけは無視したくない
 img/*.*
 images/*.*
+images/*/*
+images/*
