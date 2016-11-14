@@ -61,7 +61,7 @@
             実際にお客様と接することでしか得られない、やりがいや達成感。<br>
             この経験はあなたがプロへ近づく大きな一歩となります。<br>
           授業で学んだことを実践に活かし、収入を得ながら業界で即戦力となる力を身につけることが出来ます。</p>
-          <p class="mt15 baseLink"><a href="../event/explanation/#expenseWS">ワーク＆スタディ制度説明会はこちら</a></p>
+          <p class="mt15 baseLink"><a href="http://www.jikei-hospitality.ac.jp/event/e-work_studys.html">ワーク＆スタディ制度説明会はこちら</a></p>
         </div>
       </div>
 
